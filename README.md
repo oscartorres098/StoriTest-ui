@@ -8,7 +8,7 @@ This React application provides the user interfaces for a newsletter application
     • Register: This page lets the user register in the newsletter.
         Path: '/'
         Screen:
-        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/1b71a288-bc0b-4f56-9882-1ef2ac250507)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/1b71a288-bc0b-4f56-9882-1ef2ac250507)
     • Login: This screen lets an admin to login.
         Path: '/Admin'
         Screen:
