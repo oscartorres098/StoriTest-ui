@@ -1,0 +1,35 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 89vh;
+}
+
+
+
+
+.main-content {
+    overflow: scroll;
+    flex: 1;
+    background: #f4f6f9;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex: 2;
+    }
+
+    .main-content.Calendar {
+        display: flex;
+        align-items: center;
+    }
+}

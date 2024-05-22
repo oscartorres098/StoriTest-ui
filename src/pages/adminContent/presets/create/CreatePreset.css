@@ -1,0 +1,270 @@
+@media screen and (min-width: 896px) {
+    .signup-frame-initial-step {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2rem;
+    }
+}
+.background-people {
+    position: absolute;
+    height: 58px;
+    bottom: 0px;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+
+}
+
+.background-people-top {
+    position: absolute;
+    height: 45px;
+    top: 0px;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+
+}
+
+.full-frame-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: auto;
+}
+
+.hero-banner {
+    display: flex;
+    order: 0;
+
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-hero {
+    width: 75%;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.frame-initial-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: var(--main-petroleum-color);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form-register-first-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 40px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 535px;
+}
+
+
+.form-group-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form-group-input>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.register-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #696969;
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.register-input.error {
+    border: 1px solid #FF5C34;
+}
+
+.error-message {
+    color: #FF5C34;
+    font-size: 12px;
+    order: 2;
+}
+
+.button-signup-first-step {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    background: #FFFFFF;
+
+    border-radius: 10px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    color: #FFFFFF;
+    font-family: 'nib';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.button-signup-first-step.inactive {
+    background-color: gray;
+    color: var(--main-petroleum-color);
+}
+
+
+@media screen and (max-width: 896px) {
+
+    .background-people {
+        display: none;
+    }
+
+    .signup-frame-initial-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+        position: relative;
+    }
+
+
+    .section-boxes-images {
+        display: flex;
+
+        order: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-hero {
+        width: 75%;
+        max-width: 500px;
+        min-width: 200px;
+    }
+
+    .frame-initial-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .form-register-first-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        gap: 40px;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        width: 400px;
+    }
+
+
+
+} 

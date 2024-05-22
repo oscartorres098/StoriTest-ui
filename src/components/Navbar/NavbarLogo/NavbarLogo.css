@@ -1,0 +1,17 @@
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+}
+
+.NavbarLogo {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 920px){
+
+    
+}

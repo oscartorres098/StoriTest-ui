@@ -1,0 +1,328 @@
+.ContentHeader {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: 'nib';
+    margin: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.container-form{
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+.counter-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: relative;
+}
+
+
+.task-title-client-modal{
+    width: 100%;
+}
+
+
+.textarea-description-task-client , .textarea-add-information-task-client{
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 2px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 15px;
+    resize: vertical;
+    background-color: #F3F3F3;
+    width: -webkit-fill-available;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+.textarea-title-task {
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 2px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+    background-color: #F3F3F3;
+}
+
+.textarea-general-task {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.section-add-information-edit-task {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.textarea-add-information-task-cliente {
+    width: 60%;
+}
+
+.form-button{
+    background-color: var(--main-petroleum-color);
+    border-radius: 10px !important;
+}
+
+.textarea-description-task-title, .textarea-add-information-task-title {
+    position: absolute;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #F3F3F3;
+    padding: 0px 10px;
+    -webkit-transform: translate(0px, -9px) scale(0.75);
+    -moz-transform: translate(0px, -9px) scale(0.75);
+    -ms-transform: translate(0px, -9px) scale(0.75);
+    transform: translate(0px, -9px) scale(0.75);
+}
+
+.title-form {
+    font-size: 3rem;
+    color: var(--main-petroleum-color)
+}
+
+.type-field-task{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+    padding-top: 20px;
+}
+
+.type-field-task-edit-recurrences {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1rem; 
+    padding-top: 20px;
+    width: 100%;
+}
+
+.type-field-note{
+    display: grid; 
+    gap: 1rem; 
+    padding-top: 20px;
+    width: 500px;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    height: 100%;
+}
+
+.form-control-task{
+    margin: 1; 
+    width: 300;
+}
+
+/* Calendar */
+.calendar-body {
+    margin: 15px 80px 0px 80px;
+}
+
+.rbc-month-header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+.rbc-header {
+    background-color: #cdcccc ;
+}
+
+.rbc-header:nth-last-child(2), .rbc-header:last-child {
+    color: #fff;
+    background-color: var(--main-green-color);
+}
+
+.rbc-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rbc-month-row:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.rbc-btn-group>button {
+    font-weight: bold;
+    border-radius: 0px!important;
+    height: 40px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.calendario>.rbc-toolbar>.rbc-btn-group>.rbc-active {
+    background-color: var(--main-green-color);
+}
+
+.calendario>.rbc-month-view>.rbc-month-row>.rbc-row-content>.rbc-row>.rbc-row-segment>.rbc-event.holiday-event {
+    background-color: #3174ad;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin: 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+
+.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-sizeMedium.Mui-disabled {
+    color: var(--main-petroleum-color)!important;
+}
+
+.modal-task-assistant-select-item>div.MuiSelect-select {
+    padding: 3px 14px;
+    background-color: #FFF;
+}
+
+.modal-task-assistant-select-item:hover, .modal-task-assistant-select-item:active {
+    border: 1px solid var(--main-petroleum-color);
+}
+
+@media screen and (max-width: 1000px){
+    .calendar-body {
+        margin: 15px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .calendar-body {
+        margin: 15px 0px 0px 0px;
+        padding: 0px 10px;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .textarea-general-task {
+        display: flex; 
+        flex-direction: column;
+        grid-template-columns: 1fr; 
+        gap: 1rem 
+    }
+
+    .type-field-task{
+        display: flex; 
+        flex-direction: column;
+        gap: 1rem; 
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .type-field-note{
+        display: grid; 
+        gap: 1rem; 
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .textarea-description-task {
+        width: 100%;
+    }
+    .css-2m9kme-MuiFormControl-root{
+        width: 250px;
+    }
+    .form-control-task{
+        width: 100%;
+    }
+}
+/* Task Summary */
+
+.table-tasks{
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.40);
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.table-tasks::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-tasks::-webkit-scrollbar-thumb {
+    background-color: #9D9D9D;
+    border-radius: 6px;
+}
+
+.table-tasks::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+}
+
+.task-summary-headers.MuiTableCell-root.MuiTableCell-head{
+    text-align: center;
+    color: #000;
+    font-family: 'borna', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.task-summary-row{
+    background: #f5f5f5;
+    margin: 2px 0;
+}
+
+.task-summary-row:hover {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inputSearchComponent{
+    height:45px;
+    width:100%;
+    margin: 15px 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.template-checkbox{
+    font-family: 'aeonik', sans-serif;
+}

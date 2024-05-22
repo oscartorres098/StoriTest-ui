@@ -1,0 +1,65 @@
+.cuadroInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px ;
+    width: 446px;
+    height: 316px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.name-container{
+    display: flex;
+    width:100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-container{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.img-container{
+    justify-content: center;
+    display: flex;
+}
+.client-name{
+    text-align: center;
+    color: #000;
+    font-family: 'Borna', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+}
+
+.imgUser{
+    border-radius: 70px;
+    height:130px;
+}
+
+.floating-button {
+    position: fixed; /* Ensures it stays above content */
+    bottom: 20px; /* Adjust position as needed */
+    right: 200px; /* Adjust position as needed */
+    border: none;
+    outline: none;
+    background-color: #4CAF50; /* Customize color */
+    color: white; /* Customize text color */
+    padding: 15px 20px; /* Adjust size as needed */
+    border-radius: 50%; /* Creates a circular button */
+    cursor: pointer; /* Indicate clickable behavior */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  }
+
+@media screen and (max-width: 920px) {
+    .cuadroInfo {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+}

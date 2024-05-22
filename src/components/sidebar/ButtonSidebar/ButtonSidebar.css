@@ -1,0 +1,70 @@
+.ButtonSidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+
+    width: 160px;
+    height: 30px;
+
+    background: var(--main-petroleum-color);
+    border-radius: 10px;
+    color: #fff;
+
+    flex: none;
+    flex-grow: 0;
+    align-self: stretch;
+
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.ButtonSidebar:hover {
+    background-color: var(--main-green-color);
+}
+
+.ButtonSidebar.selected {
+    color: var(--main-petroleum-color);;
+    background-color: #fff;
+}
+
+.ButtonSidebar.collapsed {
+    justify-content: center;
+
+    width: 40px;
+}
+
+.ButtonText {
+    font-family: 'borna';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+
+    /* Gris oscuro */
+
+
+    /* Align text to the left */
+    text-align: left;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.ButtonIcon {
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
