@@ -1,0 +1,75 @@
+.ProfileButtonSidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+
+    width: 100%;
+
+    background: #f4f6f9;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.ProfileButtonSidebar.collapsed {
+    padding: 0;
+    width: 100%;
+}
+
+
+.ProfileButtonSidebar:hover {
+    background-color: #d1d1d1;
+}
+
+.ProfileButtonSidebar.selected {
+    background-color: #d8d8d8;
+    color: #000000;
+}
+
+.ImageHero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+
+    width: 55px;
+    height: 49px;
+
+    border-radius: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: padding 0.2s ease-in-out;
+}
+
+.ImageHero.collapsed {
+    padding: 0;
+    transition: padding 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.ProfileUsername {
+
+    font-family: 'aeonik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: -0.01em;
+
+
+    color: #696969;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

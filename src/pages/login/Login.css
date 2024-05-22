@@ -1,0 +1,255 @@
+.full-frame {
+    background-color: var(--main-petroleum-color);
+    justify-content: center;
+}
+
+@media screen and (min-width: 896px) {
+
+    .full-login-users {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        gap: 100px;
+    }
+}
+
+.section-boxes-images {
+    display: flex;
+    order: 1;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-hero {
+    width: 75%;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.full-frame-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    order: 0;
+    width: 100%;
+    max-width: 535px;
+}
+
+.logo-up-form-sign {
+    display: flex;
+    order: 0;
+
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-up-form-sign-assisttu {
+    width: 320px;
+}
+
+.header-assistant-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.frame-form-assistant-signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+.form-group-assistant-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 53px;
+
+    flex: none;
+    order: 0;
+    width: 100%;
+
+    flex-grow: 1;
+}
+
+
+.input-frame-assistant-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    flex: none;
+    order: 0;
+    width: 100%;
+    flex-grow: 0;
+}
+
+.error-message-assistant-signin {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    color: #FF5C34;
+    font-size: 12px;
+}
+
+.input-frame-assistant-signin>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+}
+
+.input-signin-assistant {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #696969;
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.input-signin-assistant.error {
+    border: 1px solid #FF5C34;
+}
+
+.button-signin-assistant-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    /* Naranja Assisttu */
+
+    background: var(--main-green-color);
+    /* Naranja/Hover */
+
+    border: none;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'nib';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    /* Blanco */
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.input-frame-assistant-signin>div.rememberme-input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MuiButtonBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.checkbox-rememberme{
+    width: 20px;
+    margin-right: 5px;
+    color: var(--main-green-color);
+}
+
+.text-rememberme{
+    font-family: 'aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 896px) {
+
+    .full-login-users {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+        position: relative;
+    }
+
+    .section-boxes-images {
+        display: none;
+    }
+
+    .logo-hero {
+        width: 75%;
+        max-width: 500px;
+        min-width: 100px;
+    }
+
+
+
+}
+
+.login-section-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

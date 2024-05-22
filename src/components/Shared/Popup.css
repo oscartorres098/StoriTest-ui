@@ -1,0 +1,21 @@
+.react-modal{
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    position: fixed;
+    max-height: 80%; /* Maximum height of modal */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds height */
+}
+
+.react-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.react-modal::-webkit-scrollbar-thumb {
+    background-color: #9D9D9D;
+    border-radius: 6px;
+}
+
+.react-modal::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+}
