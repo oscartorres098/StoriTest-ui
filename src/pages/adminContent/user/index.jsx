@@ -7,6 +7,7 @@ function AllUsers() {
   const { getUsers, loading, data, error } = useGetUser();
 
   useEffect(() => {
+    console.log('asds')
     getUsers();
   }, []); 
     return (

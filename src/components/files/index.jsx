@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FileUpload.css';
 
-const FileUpload = ({onData}) => {
+const FileUploadComponent = ({onData}) => {
   const [files, setFiles] = useState([]);
 
   const handleFileChange = async (event) => {
@@ -11,9 +11,8 @@ const FileUpload = ({onData}) => {
     );
     setFiles([...files, ...newFiles]);
     console.log(files)
-    onData(files);
+    onData(newFiles)
   };
-
 
   const convertToBase64 = (file) => {
     return new Promise((resolve, reject) => {
@@ -51,4 +50,4 @@ const FileUpload = ({onData}) => {
   );
 };
 
-export default FileUpload;
+export default FileUploadComponent;
