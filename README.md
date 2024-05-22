@@ -1,61 +1,31 @@
-# Getting Started with Create React App
+# StoriTest-ui
+This repository contains the ui for the newsletter aplication.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# sumary
+This React application provides the user interfaces for a newsletter application. It manages screens: Register, Login, Dashboard, Users, Presets and Schedule. Additionally, it has the necesary hooks to integrate the API.
 
-## Available Scripts
+# Screens
+    • Register: This page lets the user register in the newsletter.
+        Path: '/'
+        Screen:
+        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/1b71a288-bc0b-4f56-9882-1ef2ac250507)
+    • Login: This screen lets an admin to login.
+        Path: '/Admin'
+        Screen:
+        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/e371937d-20b6-47df-80a6-b5bf46c22a07)
+    • Users: This screen shows all users in the app.
+        Path: '/Admin/Users'
+        Screen:
+        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/bbcab422-35ea-4ab5-b288-80167dea5113)
+    • Create Preset: This screen lets create a preset.
+        Path: /Admin/Presets-Create
+        Screen:
+        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/737ea6e7-f639-437a-8858-2cc234e24bf6)
+    • Presets: This screen lets create a preset.
+        Path: /Admin/Presets
+        Screen:
+        ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/55bdb5b2-fd03-4e9e-890a-00628a31b600)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
 
