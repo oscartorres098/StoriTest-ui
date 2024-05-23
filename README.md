@@ -14,6 +14,12 @@ This React application provides the user interfaces for a newsletter application
         Path: '/Admin'
         Screen:
 ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/e371937d-20b6-47df-80a6-b5bf46c22a07)
+
+    • Users: This screen shows the dashboard.
+        Path: '/Admin/Dashboard'
+        Screen:
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/de795972-a34e-4e09-9acb-2e4b73a1681b)
+
     
     • Users: This screen shows all users in the app.
         Path: '/Admin/Users'
