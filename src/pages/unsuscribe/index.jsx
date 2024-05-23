@@ -17,7 +17,7 @@ import { useCreateUser } from "../../hooks";
 import { useSendWelcomeMail } from "../../hooks/Mail";
 const MySwal = withReactContent(Swal);
 
-function Register() {
+function Unsuscribe() {
     const { onSubmit } = useCreateUser({});
     const { sendWelcomeEmail } = useSendWelcomeMail({});
 
@@ -77,42 +77,17 @@ function Register() {
                             </div>
                             <div className="frame-initial-step">
                                 <div className="signup-stepper">
-                                    <span className="subtitle">Suscribe to get amazing info in your mail</span>
+                                    <span className="subtitle" >Hope is not a good bya, just a see you soon, write down your email</span>
                                 </div>
                                 <div className="content-wrap">
                                     <div className="form-register-first-step">
                                         <div className="form-group-input">
-                                            <div>
-                                                <input
-                                                    className={`register-input ${errors.email ? 'error' : ''}`}
-                                                    placeholder="Email"
-                                                    type="text"
-                                                    {...register("email", {
-                                                        required: "Email is required",
-                                                        pattern: {
-                                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                                            message: "Invalid email address"
-                                                        }
-                                                    })}
-                                                />
-                                                {errors.email && <span className="error-message">{errors.email.message}</span>}
-                                            </div>
-                                            <div>
-                                                <input
-                                                    className={`register-input ${errors.name ? 'error' : ''}`}
-                                                    placeholder="Name"
-                                                    type="text"
-                                                    {...register("name", {
-                                                        required: "Name is required",
-                                                    })}
-                                                />
-                                                {errors.name && <span className="error-message">{errors.name.message}</span>}
-                                            </div>
+                                           
                                         </div>
                                         <Button
                                             buttonClassName="button-signup-first-step"
                                             type="submit"
-                                            children="Suscribe"
+                                            children="Unsuscribe"
                                         />
                                     </div>
                                 </div>
@@ -125,4 +100,4 @@ function Register() {
     );
 }
 
-export { Register };
+export { Unsuscribe };

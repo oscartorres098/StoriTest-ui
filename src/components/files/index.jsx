@@ -18,7 +18,7 @@ const FileUploadComponent = ({onData}) => {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.readAsDataURL(file);
-      reader.onload = () => resolve({ name: file.name, base64: reader.result });
+      reader.onload = () => resolve({ filename: file.name, content: reader.result });
       reader.onerror = error => reject(error);
     });
   };
@@ -37,10 +37,10 @@ const FileUploadComponent = ({onData}) => {
       <ul className="file-list">
         {files.map((file, index) => (
           <li key={index} className="file-item">
-            <p className="file-name">{file.name}</p>
+            <p className="file-name">{file.filename}</p>
             <img
-              src={file.base64}
-              alt={file.name}
+              src={file.content}
+              alt={file.filename}
               className="file-preview"
             />
           </li>

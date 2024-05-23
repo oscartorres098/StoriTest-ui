@@ -1,0 +1,33 @@
+.userSelector select {
+    margin-right: 10px;
+    font-family: 'nib';
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0cap;
+    margin-top: 100px;
+  }
+  
+  .userSelector button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-width: 0cap;
+    color: #FFFFFF;
+    font-family: 'nib';
+    font-style: normal;
+    font-weight: 600;
+    background-color: var(--main-green-color);
+  }
+  
+  .userSelector ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .userSelector li {
+    background: #61dafb;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }

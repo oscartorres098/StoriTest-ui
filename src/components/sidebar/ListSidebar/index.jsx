@@ -9,7 +9,7 @@ function ListSidebar(props) {
     const { selectedOption, isCollapsed, showBadge } = props;
 
     return (
-        <ul className={props.className}>
+        <ul className={`${props.className} list-style`}>
             {props.options.map((option) => (
                 <li key={option.name}>
                     {(option.name === "Support" || option.name === "Messages Admin")? 

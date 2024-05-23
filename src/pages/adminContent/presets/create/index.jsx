@@ -11,15 +11,21 @@ import { Button } from "../../../../components/Shared/Button";
 
 import "./CreatePreset.css";
 
-import logo from '../../../../assets/images/logos/logo-assisttu-green-2.png';
-
-import { useCreatePeeset, useCreateUser } from "../../../../hooks";
+import { useCreatePeeset, useCreateUser, useGetList } from "../../../../hooks";
 import FileUploadComponent from "../../../../components/files";
 import { ContentHeader } from "../../../../components/Shared/ContentHeader";
 const MySwal = withReactContent(Swal);
 
 function CreatePreset() {
     const { onSubmit } = useCreatePeeset({});
+
+    const { getList, loading, data, error } = useGetList();
+    console.log(data)
+
+    useEffect(() => {
+        getList();
+    }, []);
+
     const { activeBlurRegister, setActiveBlurRegister } = useContext(GlobalContext)
     const {
         register,
@@ -61,8 +67,6 @@ function CreatePreset() {
                 denyButton: 'deny-button-sweet',
             }
         })
-        setValue("email", "")
-        setValue("name", "")
 
     };
 
@@ -100,6 +104,23 @@ function CreatePreset() {
                                                     })}
                                                 />
                                                 {errors.email && <span className="error-message">{errors.email.message}</span>}
+                                            </div>
+                                            <div>
+                                                <select
+                                                    className={`register-input ${errors.list ? 'error' : ''}`}
+                                                    {...register("list", {
+                                                        required: "list is required",
+                                                    })}
+                                                >
+                                                    <option value="">Select a List</option>
+                                                    {
+                                                        data?.map((el)=>{
+                                                            return <option value={el.id}>{el.name}</option>
+
+                                                        })
+                                                    }
+                                                </select>
+                                                {errors.list && <span className="error-message">{errors.list.message}</span>}
                                             </div>
                                             <div>
                                                 <select
