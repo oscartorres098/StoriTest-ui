@@ -1,50 +1,46 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
-import { GlobalContext } from '../../context/GlobalContext'
-import { CustomizedSnackbar } from '../../components/Shared/Snackbar';
+import { GlobalContext } from '../../../../context/GlobalContext'
+import { CustomizedSnackbar } from '../../../../components/Shared/Snackbar';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { Button } from "../../../../components/Shared/Button";
+import "./CreatePreset.css";
+import { ContentHeader } from "../../../../components/Shared/ContentHeader";
+import UploadUserToList from "../../../../components/users/UploadUserToList";
+import { useCreateList } from "../../../../hooks";
 
-import { Button } from "../../components/Shared/Button";
-
-import "./InitialStep.css";
-
-import logo from '../../assets/images/logos/logo-assisttu-green-2.png';
-
-import { useCreateUser } from "../../hooks";
-import { useSendWelcomeMail } from "../../hooks/Mail";
 const MySwal = withReactContent(Swal);
 
-function Register() {
-    const { onSubmit } = useCreateUser({});
-    const { sendWelcomeEmail } = useSendWelcomeMail({});
+function CreateList() {
+    const { onSubmit } = useCreateList({});
+    const { setActiveBlurRegister } = useContext(GlobalContext);
 
-    const { activeBlurRegister, setActiveBlurRegister } = useContext(GlobalContext)
     const {
         register,
-        getValues,
         formState: { errors },
         handleSubmit,
-        setValue
     } = useForm();
 
-    const SnackbarRef = useRef();
+    const [users, setUsers] = useState([]);
 
-    const history = useHistory();
-    const [listInterests, setListInterests] = useState([]);
+    const SnackbarRef = useRef();
 
     useEffect(() => {
         setActiveBlurRegister(false);
     }, [])
 
-    const handleOnSubmit = async (data) => {
+
+    const handleFiles = (data) => {
         console.log(data)
-        onSubmit(data)
+        setUsers([...users, data]);
+    };
+
+    const handleOnSubmit = async (data) => {
+        onSubmit(data, users)
         MySwal.fire({
-            title: `Welcome to NewsLetter!!`,
-            text: 'Get ready to recive amazing news!',
+            title: `List Created!!`,
+            text: 'Now you can use it in the preset section',
             width: 430,
             backdrop: true,
             customClass: {
@@ -55,12 +51,11 @@ function Register() {
                 denyButton: 'deny-button-sweet',
             }
         })
-        sendWelcomeEmail({to: data.email, subject:'Welcome to NewsLetter'})
+
     };
 
     return (
         <React.Fragment>
-
             <CustomizedSnackbar
                 open={SnackbarRef.open}
                 severity={SnackbarRef.snackbarType}
@@ -68,51 +63,38 @@ function Register() {
                 handleClose={SnackbarRef.handleClose}
                 ref={SnackbarRef}
             />
-            <div className="full-frame">
+            <div className="assistant-header" >
+                <ContentHeader text="Create List" />
+            </div>
+            <div className="full-frame-create">
+
                 <div className="register-wrap">
                     <form className="form-signup" onSubmit={handleSubmit(handleOnSubmit)}>
                         <div className="signup-frame-initial-step">
-                            <div className="hero-banner">
-                                <img className='logo-hero' src={logo} alt='Assisttu Logo' />
-                            </div>
+                            <UploadUserToList onData={handleFiles} />
                             <div className="frame-initial-step">
-                                <div className="signup-stepper">
-                                    <span className="subtitle">Suscribe to get amazing info in your mail</span>
-                                </div>
+
                                 <div className="content-wrap">
                                     <div className="form-register-first-step">
                                         <div className="form-group-input">
-                                            <div>
-                                                <input
-                                                    className={`register-input ${errors.email ? 'error' : ''}`}
-                                                    placeholder="Email"
-                                                    type="text"
-                                                    {...register("email", {
-                                                        required: "Email is required",
-                                                        pattern: {
-                                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                                            message: "Invalid email address"
-                                                        }
-                                                    })}
-                                                />
-                                                {errors.email && <span className="error-message">{errors.email.message}</span>}
-                                            </div>
                                             <div>
                                                 <input
                                                     className={`register-input ${errors.name ? 'error' : ''}`}
                                                     placeholder="Name"
                                                     type="text"
                                                     {...register("name", {
-                                                        required: "Name is required",
+                                                        required: "name is required",
                                                     })}
                                                 />
                                                 {errors.name && <span className="error-message">{errors.name.message}</span>}
                                             </div>
+                                            
+
                                         </div>
                                         <Button
                                             buttonClassName="button-signup-first-step"
                                             type="submit"
-                                            children="Suscribe"
+                                            children="Create List"
                                         />
                                     </div>
                                 </div>
@@ -125,4 +107,4 @@ function Register() {
     );
 }
 
-export { Register };
+export { CreateList };

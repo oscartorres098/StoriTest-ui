@@ -6,6 +6,7 @@ import { MainPage } from '../components/MainPage';
 import { PageProvider } from '../context/GlobalContext';
 import { Register } from './register';
 import { Login } from './login';
+import { Unsuscribe } from './unsuscribe';
 
 
 
@@ -16,7 +17,9 @@ function App() {
                     <Switch>
                         <Route exact path='/Admin' component={Login} />
                         <Route exact path='/' component={Register} />
-                        <Route exact path='/admin/:component' component={MainPage} />
+                        <Route exact path='/Unsuscribe' component={Unsuscribe} />
+
+                        <Route exact path='/Admin/:component' component={MainPage} />
 
                     </Switch>
                 </PageProvider>

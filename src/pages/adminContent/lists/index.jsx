@@ -14,7 +14,7 @@ function AllPresets() {
   return (
     <>
       <div className="assistant-header" >
-        <ContentHeader text="Presets" />
+        <ContentHeader text="Lists" />
       </div>
       <div className='profile' style={{ display: 'flex', gap: '20px', rowGap: '40px', flexWrap: 'wrap', justifyContent: 'flex-start', alignItems: 'center', alignContent: 'center', padding: '20px' }} >
         {data && data.map(

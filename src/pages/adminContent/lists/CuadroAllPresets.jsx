@@ -12,7 +12,7 @@ function CuadroAllPresets(props) {
         return {...file, disposition: "attachment"}
     })
     const handleSubmit = ()=>{
-        sendEmail({to: presets.idList, subject: presets.subject, title: presets.title, body:  presets.body, attachments: dispositionFiles})
+        sendEmail({to: presets.listId, subject: presets.subject, title: presets.title, body:  presets.body, attachments: dispositionFiles})
     }
     return (
         <div className='cuadroInfo sombra2' >

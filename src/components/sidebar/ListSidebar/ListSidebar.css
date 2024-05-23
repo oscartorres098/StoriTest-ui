@@ -14,6 +14,9 @@
 
 }
 
+.list-style{
+    list-style: none;
+}
 .ListSidebar>li {
     display: flex;
 }
