@@ -31,10 +31,25 @@ This React application provides the user interfaces for a newsletter application
         Screen:
 ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/737ea6e7-f639-437a-8858-2cc234e24bf6)
     
-    • Presets: This screen lets create a preset.
+    • Presets: This screen lets create a preset and send it.
         Path: /Admin/Presets
         Screen:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/7abbe2e5-8d9b-48e0-9e80-226a9116c751)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/f9e93bb9-0bec-4d58-960e-d1d208270f01)
+
+    • Create List: This screen lets create a lsit of user to send a mail.
+        Path: /Lists
+        Screen:
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/737ea6e7-f639-437a-8858-2cc234e24bf6)
+
+
+    • Unsuscribe: This screen lets a user unsuscribe.
+        Path: /Unsuscribe
+        Screen:
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/96b906cc-88d1-4a46-b9ed-c4e73605af82)
+
+
+# run the proejct
+
 
 
 
