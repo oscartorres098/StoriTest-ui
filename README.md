@@ -34,7 +34,8 @@ This React application provides the user interfaces for a newsletter application
     • Presets: This screen lets create a preset.
         Path: /Admin/Presets
         Screen:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/55bdb5b2-fd03-4e9e-890a-00628a31b600)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/7abbe2e5-8d9b-48e0-9e80-226a9116c751)
+
 
 
 ### Advanced Configuration
