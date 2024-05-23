@@ -24,8 +24,8 @@ This React application provides the user interfaces for a newsletter application
     • Users: This screen shows all users in the app.
         Path: '/Admin/Users'
         Screen:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/bbcab422-35ea-4ab5-b288-80167dea5113)
-    
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/a44ad887-ec5d-485d-a967-2efb1171c1d5)
+
     • Create Preset: This screen lets create a preset.
         Path: /Admin/Presets-Create
         Screen:
@@ -34,12 +34,13 @@ This React application provides the user interfaces for a newsletter application
     • Presets: This screen lets create a preset and send it.
         Path: /Admin/Presets
         Screen:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/f9e93bb9-0bec-4d58-960e-d1d208270f01)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/c92d98f3-aee0-4572-ae42-4dd0288fd974)
+
 
     • Create List: This screen lets create a lsit of user to send a mail.
         Path: /Lists
         Screen:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/737ea6e7-f639-437a-8858-2cc234e24bf6)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/69de7572-7069-4eeb-b65f-ca48245288f8)
 
 
     • Unsuscribe: This screen lets a user unsuscribe.
