@@ -52,7 +52,8 @@ This React application provides the user interfaces for a newsletter application
         welcome mail
 ![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/32b29188-64b3-46e6-9501-e56c15497b6b)
         newsletter:
-![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/0d56720d-b73a-40b7-ad20-88893c5d6305)
+![image](https://github.com/oscartorres098/StoriTest-ui/assets/36300388/6bb8e453-9f9f-41ed-a9a5-2e612c647405)
+
 
 # run the proejct
 
