@@ -56,8 +56,9 @@ This React application provides the user interfaces for a newsletter application
 
 
 # run the proejct
-
-
+To run the project just clone it run:
+npm i
+npm run start
 
 
 ### Advanced Configuration
